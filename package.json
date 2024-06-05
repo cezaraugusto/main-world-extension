@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-target-webextension": "^1.1.1"
+  },
+  "scripts": {
+    "start": "npx webpack serve --mode development"
+  },
+  "name": "2react-my-app",
+  "private": true,
+  "version": "0.0.0"
+}
