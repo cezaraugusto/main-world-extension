@@ -1,12 +1,15 @@
 {
   "devDependencies": {
     "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
     "webpack-target-webextension": "^1.1.1"
   },
+  "type": "module",
   "scripts": {
     "start": "npx webpack serve --mode development"
   },
-  "name": "2react-my-app",
+  "name": "main-world-extension",
   "private": true,
   "version": "0.0.0"
 }

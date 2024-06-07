@@ -6,14 +6,19 @@
   "background": {
     "service_worker": "./dist/background.js"
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/*.js", "dist/*.json"],
+      "matches": ["https://extension.js.org/*"]
+    }
+  ],
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
   "content_scripts": [
     {
-      "matches": [
-        "https://extension.js.org/*"
-      ],
-      "js": [
-        "./dist/content.js"
-      ]
+      "world": "MAIN",
+      "matches": ["https://extension.js.org/*"],
+      "js": ["./dist/content.js"]
     }
   ]
 }
